@@ -5,7 +5,7 @@ var y = new Array(20);                      // **change** float[] y = new float[
 var segLength = 18;                         // **change** float to var
 
 function setup() {                          // **change** void setup() to function setup()
-  createCanvas(640, 360);                   // **change** size() to createCanvas()
+  createCanvas(640, 660);                   // **change** size() to createCanvas()
   strokeWeight(9);                          // strokeWeight() is the same
   stroke(255, 100);                         // stroke() is the same
   for(var i=0; i<x.length; i++) {           // initialize the array
