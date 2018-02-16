@@ -1,19 +1,14 @@
-/**
- * This example can be found in the Processing examples package
- * that comes with the Processing PDE.
- * Processing > Examples > Topics > Interaction > Follow3
- * Adapted by Evelyn Eastmond
- */
 
-var x = new Array(20);  // **change** float[] x = new float[20] to new Array(20)
-var y = new Array(20);  // **change** float[] y = new float[20] to new Array(20)
-var segLength = 18;                                 // **change** float to var
+
+var x = new Array(20);                      // **change** float[] x = new float[20] to new Array(20)
+var y = new Array(20);                      // **change** float[] y = new float[20] to new Array(20)
+var segLength = 18;                         // **change** float to var
 
 function setup() {                          // **change** void setup() to function setup()
   createCanvas(640, 360);                   // **change** size() to createCanvas()
   strokeWeight(9);                          // strokeWeight() is the same
   stroke(255, 100);                         // stroke() is the same
-  for(var i=0; i<x.length; i++) {         // initialize the array
+  for(var i=0; i<x.length; i++) {           // initialize the array
     x[i]=0;
     y[i]=0;
   }
@@ -37,9 +32,9 @@ function drawSegment(i, xin, yin) {         // **change** void drawSegment() to 
 }
 
 function segment(x, y, a) {                 // **change** void segment() to function segment(), remove type declarations
-  push();                            		// pushMatrix() becomes push()
+  push();                            	    	// pushMatrix() becomes push()
   translate(x, y);                          // translate() is the same
   rotate(a);                                // rotate() is the same
   line(0, 0, segLength, 0);                 // line() is the same
-  pop();                              		// popMatrix() becomes pop()
+  pop();                              	  	// popMatrix() becomes pop()
 }
