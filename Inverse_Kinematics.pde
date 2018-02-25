@@ -7,14 +7,14 @@
 
 arm[] link = new arm[2];                    //Array named arm with 2 links
 PVector base;                               //places the location of base revolute joint
-float L = 400;                              //the lenght of the link
+float L = 100;                              //the lenght of the link
 PVector position;                           //Position of object (ball)
 PVector velocity;                           //velocity of object movement speed of ball
 
 
 
 void setup() {
-  size (2300, 1800);                        //defines the dimension of display window width and hight of pixels
+  size (800, 600);                        //defines the dimension of display window width and hight of pixels
 
   position = new PVector(30, 0);            //inital position of object
   velocity = new PVector(2, 6);             //(x,y) direction of inital movement
