@@ -14,7 +14,7 @@ PVector velocity;                           //velocity of object movement speed 
 
 
 void setup() {
-  size (2300, 1800);                        //defines the dimension of display window width and hight of pixels
+  size (1200, 1000);                        //defines the dimension of display window width and hight of pixels
 
   position = new PVector(30, 0);            //inital position of object
   velocity = new PVector(2, 6);             //(x,y) direction of inital movement
